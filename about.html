@@ -1,1 +1,105 @@
-# my-first-app
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me & My Mission 📚</title>
+    <style>
+        body {
+            font-family: 'Quicksand', 'Nunito', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #e8dbfc 0%, #ffc2d1 100%);
+            color: #4a3e56;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 2.5rem 2rem;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(180, 150, 210, 0.3);
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            max-width: 400px;
+            width: 100%;
+        }
+        .avatar {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+        h1 { 
+            color: #ff758f; 
+            margin-top: 0;
+            margin-bottom: 1.5rem; 
+            font-size: 2.2rem;
+            font-weight: 800;
+        }
+        p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #6c5a7b;
+            margin-bottom: 1.5rem;
+        }
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border: 1px dashed #ff8fa3;
+            text-align: left;
+        }
+        .highlight-box h3 {
+            margin-top: 0;
+            color: #ff758f;
+            font-size: 1.1rem;
+        }
+        ul { list-style-type: none; padding: 0; margin: 0; }
+        li { margin: 0.6rem 0; font-size: 1rem; color: #4a3e56; display: flex; align-items: center; }
+        li span { margin-right: 10px; }
+        .back-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff8fa3 0%, #ff758f 100%);
+            color: white;
+            text-decoration: none;
+            padding: 0.9rem 2.2rem;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255, 117, 143, 0.4);
+            transition: all 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 7px 20px rgba(255, 117, 143, 0.6);
+        }
+    </style>
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <div class="card">
+        <div class="avatar">👩‍💻</div>
+        <h1>About Me ✨</h1>
+        <p>Hi, I'm <b>Anaya Mukhtar</b>! I help tech students crack their exams with confidence and build real-world coding habits.</p>
+        <p>Whether you are studying for <b>B.Tech, IT, or BV Tech</b>, navigating GitHub Classrooms and practical engineering exams can be overwhelming. That's why I created this platform!</p>
+        
+        <div class="highlight-box">
+            <h3>What I Offer:</h3>
+            <ul>
+                <li><span>🎯</span> Highly accurate predicted exam sheets</li>
+                <li><span>🎥</span> Step-by-step tech course modules</li>
+                <li><span>💻</span> Practical GitHub & Git training</li>
+            </ul>
+        </div>
+
+        <a href="index.html" class="back-btn">Go Back Home 🏠</a>
+    </div>
+
+</body>
+</html>
+
