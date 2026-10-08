@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Study Store 📚✨</title>
+    <style>
+        body {
+            font-family: 'Quicksand', 'Nunito', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ffe5ec 0%, #e8dbfc 100%);
+            color: #4a3e56;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        h1 { color: #ff758f; font-weight: 800; font-size: 2.2rem; margin-bottom: 0.5rem; text-shadow: 1px 1px 0px #fff; }
+        .subtitle { font-size: 1.1rem; color: #6c5a7b; margin-bottom: 2rem; text-align: center; }
+        .grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 800px; width: 100%; margin-bottom: 2rem; }
+        .item-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 1.5rem;
+            width: 280px;
+            box-shadow: 0 8px 25px rgba(255, 182, 193, 0.25);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .icon { font-size: 3rem; margin-bottom: 0.5rem; }
+        h3 { margin: 0.5rem 0; color: #4a3e56; font-size: 1.3rem; }
+        .desc { font-size: 0.95rem; color: #6c5a7b; line-height: 1.4; margin-bottom: 1rem; }
+        .price { font-size: 1.4rem; font-weight: bold; color: #ff758f; margin-bottom: 1rem; }
+        .buy-btn {
+            background: linear-gradient(135deg, #ff8fa3 0%, #ff758f 100%);
+            color: white;
+            text-decoration: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(255, 117, 143, 0.3);
+            transition: transform 0.2s;
+        }
+        .buy-btn:hover { transform: scale(1.05); }
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.8);
+            color: #6c5a7b;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: bold;
+            border: 2px solid #e8dbfc;
+        }
+    </style>
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Study Store 🛍️</h1>
+    <p class="subtitle">Get instant access to top-tier preparation resources!</p>
+
+    <div class="grid">
+        <!-- Item 1 -->
+        <div class="item-card">
+            <div>
+                <div class="icon">📝</div>
+                <h3>Predicted Exam Sheets</h3>
+                <p class="desc">Accurate predicted question sheets curated for B.Tech & IT practical exams.</p>
+            </div>
+            <div>
+                <div class="price">$19.99</div>
+                <a href="#" class="buy-btn">Unlock Sheets 🔒</a>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item-card">
+            <div>
+                <div class="icon">🎥</div>
+                <h3>Git & GitHub Course</h3>
+                <p class="desc">Master version control, repositories, and automated pipelines step-by-step.</p>
+            </div>
+            <div>
+                <div class="price">$49.99</div>
+                <a href="#" class="buy-btn">Enroll Now 🚀</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html" class="nav-btn">🏠 Home</a>
+
+</body>
+</html>
 
