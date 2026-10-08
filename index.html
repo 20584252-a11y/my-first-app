@@ -3,67 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Tech Project</title>
+    <title>My Magical Code Space ✨</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: #ffffff;
+            font-family: 'Quicksand', 'Nunito', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ffe5ec 0%, #ffc2d1 50%, #e8dbfc 100%);
+            color: #4a3e56;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            overflow: hidden;
+            position: relative;
         }
+
+        /* Sparkle backgrounds */
+        body::before, body::after {
+            content: "✨";
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.6;
+            animation: float 4s ease-in-out infinite;
+        }
+        body::before { top: 15%; left: 15%; animation-delay: 0s; }
+        body::after { bottom: 15%; right: 15%; animation-delay: 2s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-10px) scale(1.1); }
+        }
+
         .card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 3rem 2.5rem;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            max-width: 400px;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            max-width: 360px;
+            transition: transform 0.3s ease;
         }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .avatar {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: wave 3s infinite;
+            transform-origin: 70% 70%;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            20% { transform: rotate(-10deg); }
+            40% { transform: rotate(14deg); }
+            60% { transform: rotate(-4deg); }
+            80% { transform: rotate(10deg); }
+        }
+
         h1 {
-            margin-top: 0;
-            font-size: 2.2rem;
-            color: #4facfe;
+            margin: 0 0 0.8rem 0;
+            font-size: 2rem;
+            color: #ff758f;
+            font-weight: 800;
+            text-shadow: 1px 1px 0px #ffffff;
         }
+
         p {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             line-height: 1.6;
-            color: #e0e0e0;
+            color: #6c5a7b;
+            margin-bottom: 2rem;
         }
+
         button {
-            background: #4facfe;
+            background: linear-gradient(135deg, #ff8fa3 0%, #ff758f 100%);
             color: white;
             border: none;
-            padding: 0.8rem 1.8rem;
-            font-size: 1rem;
-            border-radius: 25px;
+            padding: 0.9rem 2.2rem;
+            font-size: 1.05rem;
+            border-radius: 50px;
             cursor: pointer;
-            transition: transform 0.2s, background 0.2s;
+            box-shadow: 0 5px 15px rgba(255, 117, 143, 0.4);
+            transition: all 0.2s ease;
             font-weight: bold;
-            margin-top: 1rem;
+            letter-spacing: 0.5px;
         }
+
         button:hover {
-            background: #00f2fe;
+            background: linear-gradient(135deg, #ff758f 0%, #ff4d6d 100%);
             transform: scale(1.05);
+            box-shadow: 0 7px 20px rgba(255, 117, 143, 0.6);
+        }
+        
+        button:active {
+            transform: scale(0.98);
         }
     </style>
+    <!-- Beautiful rounded font from Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
 </head>
 <body>
 
     <div class="card">
-        <h1>Hello, World! 🚀</h1>
-        <p>Welcome to my brand new tech project. This page is hosted securely on GitHub.</p>
-        <button onclick="celebrate()">Click Me!</button>
+        <div class="avatar">💖</div>
+        <h1>Hi, Welcome! ✨</h1>
+        <p>Creating beautiful things with code. This is my cozy little corner of the internet!</p>
+        <button onclick="celebrate()">Press Me! 💕</button>
     </div>
 
     <script>
         function celebrate() {
-            alert("🎉 Awesome! You successfully created and ran your first web app project!");
+            alert("🌸 Yay! You just updated your site with a cutesy aesthetic! Keep shining! ⭐");
         }
     </script>
 
